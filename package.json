@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "Job application test assignment by Zachary Litvinenko",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node dist/js/index.js",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "author": "ZackMercury",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
