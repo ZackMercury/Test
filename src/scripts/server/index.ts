@@ -17,7 +17,7 @@ const rockets:{ [key:string]: RocketBase } = {};
 
 //Request handling
 app.get("/list", (req, res)=>{
-    return res.send(Object.values(rockets).map(rocket=>rocket.name).join("\n")).end();
+    return res.send(Object.values(rockets).map(rocket=>(rocket as CustomRocket).getName()).join("\n")).end();
 });
 
 app.post("/add", (req, res)=>{
